@@ -1,0 +1,49 @@
+body {
+    background-color: #e7eef6;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "first second third fourth"
+        "fifth sixth seventh eighth";
+}
+
+article {
+    background-color: white;
+}
+
+article:nth-child(1) {
+    grid-area: first;
+}
+
+article:nth-child(2) {
+    grid-area: second;
+}
+
+article:nth-child(3) {
+    grid-area: third;
+}
+
+article:nth-child(4) {
+    grid-area: fourth;
+}
+
+article:nth-child(5) {
+    grid-area: fifth;
+}
+
+article:nth-child(6) {
+    grid-area: sixth;
+}
+
+article:nth-child(7) {
+    grid-area: seventh;
+}
+
+article:nth-child(8) {
+    grid-area: eighth;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
