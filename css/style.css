@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: #e7eef6;
+    padding: 3rem;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 3rem;
     grid-template-areas: 
         "first second third fourth"
         "fifth sixth seventh eighth";
-}
-
-article {
-    background-color: white;
 }
 
 article:nth-child(1) {
@@ -43,7 +44,54 @@ article:nth-child(8) {
     grid-area: eighth;
 }
 
+article {
+    background-color: white;
+    text-align: center;
+    padding: 3.2rem 2rem 4rem 2rem;
+    border-radius: 6px;
+}
+
 img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+    padding-bottom: 2.8rem;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-bottom: 2.5rem;
+}
+
+h1, a {
+    color: #45484f;
+}
+
+.acronym, a {
+    text-transform: uppercase;
+}
+
+p {
+    color: #747b81;
+    font-size: 1.3rem;
+    padding-bottom: 4.2rem;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    position: relative;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    background-color: #dbdbdb;
+    width: 80%;
+    height: 2px;
+    left: 10%;
+    top: -2.1rem;
 }
